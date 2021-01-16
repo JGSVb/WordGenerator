@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 #define CONS_COMB 35 // Amount of consonants combinations
-
+#define WORDLEN 10
 #define RVOWEL vowels[rand() % 5]
 #define RCONSONANT consonants[rand() % 20]
 
@@ -26,7 +26,7 @@ const char allowed_conscomb[][2] = {
 
 
 // Check if a consonants combination is NOT in `consonants_combinations` array
-bool sla(char a, char b){
+bool disall_ccomb(char a, char b){
   for(int i=0; i<CONS_COMB; i++){
     if(a == allowed_conscomb[i][0] && b == allowed_conscomb[i][1]){
       return false;
@@ -36,29 +36,15 @@ bool sla(char a, char b){
 }
 
 char rndvowel(){ return vowels[rand()%5]; }
-char rndcons()){ return consonants[rand()%20]; }
+char rndcons(){ return consonants[rand()%20]; }
 
-// Converts a string to an unsigned integer
-// I know I can use atoi but I want to do this from scratch
-
-// -----------------------------
-//
-// Essa parte ainda não terminei
-//
-// -----------------------------
-const char numbers[] = "0123456789";
-unsigned int struint(char* string, int size){
-  int i, k;
-  unsigned int result = 0;
-
-  for(i=0; i<size; i++){
-    for(k=0; k<10; k++){
-      
-    }
-  }
-}
 
 int main(int argc, char **argv){
+
+  if(argc<2){
+    printf("Usage: %s \033[1m<Word Length>\033[0m\n", argv[0]);
+    return 127;
+  }
   {
     struct timespec ts;
     clock_gettime(CLOCK_REALTIME, &ts);
