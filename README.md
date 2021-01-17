@@ -10,11 +10,18 @@ This simple C program generates a random word using simple rules:
 
 ### How to compile
 
-```gcc wordgen.c -o wordgen```
+```bash
+gcc wordgen.c -o wordgen
+```
 
+### How to use
+
+```bash
+./wordgen <Word Length>
+```
 # Gerador de Palavras
 
-##### Projeto criado como um exercicio para aprender a linguagem de programação C _(a minha primeija vez a usar git pela linha de comando pra fazer commits)_
+##### Projeto criado como um exercicio para aprender a linguagem de programação C _(a minha primeira vez a usar git pela linha de comando pra fazer commits)_
 
 Este simples programa em C gera uma palavra aleatória seguindo algumas regras simples:
 
@@ -24,4 +31,12 @@ Este simples programa em C gera uma palavra aleatória seguindo algumas regras s
 
 ### Como compilar
 
-```gcc wordgen.c -o wordgen```
+```bash
+gcc wordgen.c -o wordgen
+```
+
+### Como Usar
+
+```bash
+./wordgen <Tamanho da palavra>
+```
