@@ -14,7 +14,7 @@ This simple C program generates a random word using simple rules:
 
 # Gerador de Palavras
 
-##### Projeto criado como um exercicio para aprender a linguagem de programação C _(a minha primeija vez a usar git pela linha de comando pra fazer commits)
+##### Projeto criado como um exercicio para aprender a linguagem de programação C _(a minha primeija vez a usar git pela linha de comando pra fazer commits)_
 
 Este simples programa em C gera uma palavra aleatória seguindo algumas regras simples:
 
